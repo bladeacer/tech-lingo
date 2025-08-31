@@ -1,6 +1,6 @@
 ## tech-lingo
 
-An Espanso package with terms commonly used in the IT sector. WIP.
+An Espanso package with terms commonly used in the tech sector. WIP.
 
 ## Installation
 
@@ -42,27 +42,25 @@ In short, casing is a way to indicate output verbosity.
 There are some commands like `_Pwd` and `_PWD` with the same verbosity.
 
 ## Credits
-Plenty of descriptions and definitions were taken from [tldr pages](https://github.com/tldr-pages/tldr).
+Descriptions and definitions were taken from:
+- [Wikipedia](https://www.wikipedia.org/)
+- [tldr pages](https://github.com/tldr-pages/tldr)
+
+We thank the contributors of these projects for their excellent work.
+
+---
 
 ## License
-This Espanso package, "tech-lingo" is released under the GNU General Public
-License version 3 (GPLv3) License.
+This Espanso package, "tech-lingo", is a collection of code and content under different licenses.
 
-### License Notice
-```
-This file is part of tech-lingo. tech-lingo is a CLI tool that lets you add
-folders to backup manually to a target Git repository. 
+### For the Espanso Package Code and Original Rules
+The configuration files and original Espanso rules in this package are licensed under the **GNU General Public License version 3 (GPLv3)**. You can find the full license text in the [LICENSE.GPL](LICENSE.GPL) file.
 
-Copyright (c) 2025 bladeacer
+### For All Sourced Content
+The descriptions and definitions from **Wikipedia** and **tldr pages** are licensed under the **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)**. You can find the full license text in the [LICENSE.CC-BY-SA](LICENSE.CC-BY-SA) file.
 
-tech-lingo is free software: you can redistribute it and/or modify it under the
-terms of the GNU General Public License as published by the Free Software
-Foundation, either version 3 of the License, or (at your option) any later version.
+---
 
-tech-lingo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
-PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with tech-lingo.
-If not, see <https://www.gnu.org/licenses/>. 
-```
+### License Notices
+You should have received a copy of the licenses along with this project.
+If not, you can find them in the repository's root directory.

@@ -1,19 +1,163 @@
-matches:
-  # CLI
-  # -----
-  - trigger: "_gh"
-    replace: "GitHub CLI"
-  - trigger: "_Gh"
-    replace: "GitHub CLI. Work seamlessly with GitHub.\nSome subcommands such as config have their own usage documentation."
-  - trigger: "_GH"
-    replace: "GitHub CLI. Work seamlessly with GitHub.\nSome subcommands such as config have their own usage documentation.\n\nMore information: https://cli.github.com/manual/gh. "
 
+# ================================================================================ #
+# This Espanso package is dual-licensed.                                           #
+#                                                                                  #
+# The original Espanso rules, structure, and custom code within this file are      #
+# licensed under the GNU General Public License v3.0 (GPLv3).                      #
+# You can find the full license text in the LICENSE.GPL file.                      #
+#                                                                                  #
+# The text descriptions sourced from tldr-pages and Wikipedia are licensed under   #
+# the Creative Commons Attribution-ShareAlike 4.0 International License            #
+# (CC BY-SA 4.0). You can find the full license text in the LICENSE.CC-BY-SA file. #
+# ================================================================================ #
+
+# ================================================================================ #
+# --- Start of CC BY-SA 4.0 Licensed Code derived from tldr-pages ---              #
+# ================================================================================ #
+
+matches:
+  # ================================================================================ #
+  # Start of CLI                                                                     #
+  # ================================================================================ #
+  
+  # =============== #
+  # Version Control #
+  # =============== #
+
+  - trigger: "_git"
+    replace: "git is a distributed version control system."
+  - trigger: "_Git"
+    replace: "git is a distributed version control system.\nSome common subcommands include commit, add, branch, switch, push."
+  - trigger: "_GIT"
+    replace: "git is a distributed version control system.\nSome common subcommands include commit, add, branch, switch, push.\n\nMore information: https://git-scm.com/docs/git."
+
+  - trigger: "_gh"
+    replace: "gh is a CLI for GitHub."
+  - trigger: "_Gh"
+    replace: "gh is a Command Line Interface (CLI) which works seamlessly with GitHub.\nSome subcommands such as config have their own usage documentation."
+  - trigger: "_GH"
+    replace: "gh is a Command Line Interface (CLI) which works seamlessly with GitHub.\nSome subcommands such as config have their own usage documentation.\n\nMore information: https://cli.github.com/manual/gh. "
+
+  - trigger: "_svn"
+    replace: "svn is a Subversion client tool."
+  - trigger: "_Svn"
+    replace: "svn is a Subversion client tool.\n\nMore information: https://svnbook.red-bean.com/en/1.7/svn-book.html#svn.ref.svn."
+  - trigger: "_SVN"
+    replace: "svn is a Subversion client tool.\n\nMore information: https://svnbook.red-bean.com/en/1.7/svn-book.html#svn.ref.svn."
+  
+  - trigger: "_glab"
+    replace: "glab is a CLI for GitLab."
+  - trigger: "_Glab"
+    replace: "glab is a Command Line Interface (CLI) which works seamlessly with GitLab.\nSome subcommands such as config have their own usage documentation."
+  - trigger: "_GLAB"
+    replace: "glab is a Command Line Interface (CLI) which works seamlessly with GitLab.\nSome subcommands such as config have their own usage documentation.\n\nMore information: https://gitlab.com/gitlab-org/cli/-/tree/main/docs/source."
+
+  # ============ #
+  # Text Editors #
+  # ============ #
+  
   - trigger: "_vim"
-    replace: "Vim (Vi IMproved)"
+    replace: "Vim (Vi IMproved) is a command-line text editor."
   - trigger: "_Vim"
-    replace: "Vim (Vi IMproved), a command-line text editor,\nprovides several modes for different kinds of text manipulation."
+    replace: "Vim (Vi IMproved) is a command-line text editor,\nprovides several modes for different kinds of text manipulation."
   - trigger: "_VIM"
-    replace: "Vim (Vi IMproved), a command-line text editor,\nprovides several modes for different kinds of text manipulation.\n\nMore information: https://www.vim.org."
+    replace: "Vim (Vi IMproved) is a command-line text editor,\nprovides several modes for different kinds of text manipulation.\nPressing <i> in normal mode enters insert mode.\nPressing <Esc> goes back to normal mode, which enables the use of Vim commands.\n\nRelated to: vimdiff, vimtutor, nvim, gvim.\nMore information: https://www.vim.org."
+
+  - trigger: "_vdiff"
+    replace: "vimdiff opens up two or more files in vim and show the differences between them."
+  - trigger: "_Vdiff"
+    replace: "vimdiff open up two or more files in vim and show the differences between them.\nRelated to: vim, vimtutor, nvim."
+  - trigger: "_VDIFF"
+    replace: "Open up two or more files in vim and show the differences between them.\nRelated to: vim, vimtutor, nvim.\n\nMore information: https://www.vim.org."
+
+  - trigger: "_vtutor"
+    replace: "vimtutor teaches the basic vim commands."
+  - trigger: "_Vtutor"
+    replace: "vimtutor teaches the basic vim commands.\nRelated to: vim, vimdiff, nvim."
+  - trigger: "_VTUTOR"
+    replace: "vimtutor teaches the basic vim commands.\nRelated to: vim, vimdiff, nvim.\n\nMore information: https://manned.org/vimtutor."
+
+  - trigger: "_gvim"
+    replace: "gvim is a Graphical User Interface version of Vim (Vi IMproved), a command-line text editor."
+  - trigger: "_Gvim"
+    replace: "gvim is a Graphical User Interface (GUI) version of Vim (Vi IMproved), a command-line text editor.\n\nRelated to: vimdiff, vimtutor, nvim, vim."
+  - trigger: "_GVIM"
+    replace: "gvim is a Graphical User Interface version of Vim (Vi IMproved), a command-line text editor.\n\nRelated to: vimdiff, vimtutor, nvim, vim.\nMore information: https://www.vim.org."
+
+  - trigger: "_nvim"
+    replace: "Neovim is a programmer's text editor based on Vim."
+  - trigger: "_Nvim"
+    replace: "Neovim is a programmer's text editor based on Vim,\nwhich provides several modes for different kinds of text manipulation."
+  - trigger: "_NVIM"
+    replace: "Neovim is a programmer's text editor based on Vim,\nwhich provides several modes for different kinds of text manipulation.\n\nPressing <i> in normal mode enters insert mode. <Esc> or <Ctrl c> goes back to normal mode, which doesn't allow regular text insertion.\n\nRelated to: vim, vimtutor, vimdiff.\nMore information: https://neovim.io."
+
+  - trigger: "_emacs"
+    replace: "emacs is an extensible, customizable, self-documenting, real-time display editor."
+  - trigger: "_Emacs"
+    replace: "emacs is an extensible, customizable, self-documenting, real-time display editor.\nRelated to: emacsclient."
+  - trigger: "_EMACS"
+    replace: "emacs is an extensible, customizable, self-documenting, real-time display editor.\nRelated to: emacsclient.\n\nMore information: https://www.gnu.org/software/emacs."
+
+  - trigger: "_emaclient"
+    replace: "emacsclient lets you open files in an existing Emacs server."
+  - trigger: "_Emaclient"
+    replace: "emacsclient lets you open files in an existing Emacs server.\nRelated to: emacs."
+  - trigger: "_EMACLIENT"
+    replace: "emacsclient lets you open files in an existing Emacs server.\nRelated to: emacs.\n\nMore information: https://www.gnu.org/software/emacs/manual/html_node/emacs/emacsclient-Options.html."
+
+  # =================== #
+  # Regular Expressions #
+  # =================== #
+
+  - trigger: "_grep"
+    replace: "grep can be used to find patterns in files using regexes."
+  - trigger: "_Grep"
+    replace: "grep is a CLI tool which can be used to find patterns in files using regexes (regular expressions)."
+  - trigger: "_GREP"
+    replace: "grep is a CLI tool which can be used to find patterns in files using regexes (regular expressions).\n\nMore information: https://www.gnu.org/software/grep/manual/grep.html."
+
+  - trigger: "_ack"
+    replace: "A search tool like grep, optimized for developers."
+  - trigger: "_Ack"
+    replace: "A search tool like grep, optimized for developers.\nRelated to: rg, which is much faster."
+  - trigger: "_ACK"
+    replace: "A search tool like grep, optimized for developers.\nRelated to: rg, which is much faster.\n\nMore information: https://beyondgrep.com/documentation."
+
+  - trigger: "_ag"
+    replace: "ag, the Silver Searcher."
+  - trigger: "_Ag"
+    replace: "ag, the Silver Searcher.\nLike ack, but aims to be faster."
+  - trigger: "_AG"
+    replace: "ag, the Silver Searcher.\nLike ack, but aims to be faster.\n\nMore information: https://manned.org/ag."
+
+  - trigger: "_rg"
+    replace: "ripgrep, a recursive line-oriented search tool."
+  - trigger: "_Rg"
+    replace: "ripgrep, a recursive line-oriented search tool.\nAims to be a faster alternative to grep."
+  - trigger: "_RG"
+    replace: "ripgrep, a recursive line-oriented search tool.\nAims to be a faster alternative to grep.\n\nMore information: https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md."
+
+  # ================= #
+  # File Manipulation #
+  # ================= #
+
+  - trigger: "_awk"
+    replace: "awk is a versatile programming language for working on files."
+  - trigger: "_Awk"
+    replace: "awk is a versatile programming language for working on files.\nNote: Different implementations of AWK often make this a symlink of their binary.\nRelated to: gawk."
+  - trigger: "_AWK"
+    replace: "awk is a versatile programming language for working on files.\nNote: Different implementations of AWK often make this a symlink of their binary.\nRelated to: gawk.\n\nMore information: https://github.com/onetrueawk/awk."
+
+  - trigger: "_gawk"
+    replace: "GNU version of awk, a versatile programming language for working on files."
+  - trigger: "_Gawk"
+    replace: "GNU version of awk, a versatile programming language for working on files.\nRelated to: awk."
+  - trigger: "_GAWK"
+    replace: "GNU version of awk, a versatile programming language for working on files.\nRelated to: awk.\n\nMore information: https://www.gnu.org/software/gawk/manual/gawk.html."
+      
+  # ============= #
+  # UNIX Commands #
+  # ============= #
 
   - trigger: "_ssh"
     replace: "Secure Shell (SSH)"
@@ -36,17 +180,33 @@ matches:
   - trigger: "_PWD"
     replace: "Print the name of current/working directory (pwd).\n\nMore information: https://www.gnu.org/software/coreutils/manual/html_node/pwd-invocation.html."
 
-  - trigger: "_grep"
-    replace: "Find patterns in files using regexes."
-  - trigger: "_Grep"
-    replace: "Find patterns in files using regexes (regular expressions)."
-  - trigger: "_GREP"
-    replace: "Find patterns in files using regexes (regular expressions).\n\nMore information: https://www.gnu.org/software/grep/manual/grep.html."
+  # ================================================================================ #
+  # End of CLI                                                                       #
+  # ================================================================================ #
+  
+# ================================================================================ #
+# --- End of CC BY-SA 4.0 Licensed Code derived from tldr-pages ---                #
+# ================================================================================ #
 
-  - trigger: "_rg"
-    replace: "Ripgrep, a recursive line-oriented search tool."
-  - trigger: "_Rg"
-    replace: "Ripgrep, a recursive line-oriented search tool.\nAims to be a faster alternative to grep."
-  - trigger: "_RG"
-    replace: "Ripgrep, a recursive line-oriented search tool.\nAims to be a faster alternative to grep.\n\nMore information: https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md."
-  # -----
+# ================================================================================ #
+# --- Start of CC BY-SA 4.0 Licensed Code derived from Wikipedia ---               #
+# ================================================================================ #
+
+  # ================================================================================ #
+  # Start of Organisations                                                           #
+  # ================================================================================ #
+  
+  - trigger: "_fsf"
+    replace: "The Free Software Foundation (FSF) is a non-profit organisation which supports the free software movement\nwith its preference for software being distributed under copyleft terms."
+  - trigger: "_Fsf"
+    replace: "The Free Software Foundation (FSF) is a non-profit organisation founded by Richard Stallman.\n\nThe organisation supports the free software movement, with its preference for software being distributed under copyleft ('share alike') terms."
+  - trigger: "_FSF"
+    replace: "The Free Software Foundation (FSF) is a 501(c)(3) non-profit organisation founded by Richard Stallman on October 4, 1985.\n\nThe organisation supports the free software movement, with its preference for software being distributed under copyleft ('share alike') terms,\nsuch as with its own GNU General Public License."
+
+  # ================================================================================ #
+  # End of Organisations                                                             #
+  # ================================================================================ #
+
+# ================================================================================ #
+# --- End of CC BY-SA 4.0 Licensed Code derived from Wikipedia ---                 #
+# ================================================================================ #
