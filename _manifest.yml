@@ -1,0 +1,7 @@
+name: "tech-lingo"
+title: "Tech Lingo"
+description: A package with terms commonly used in the IT sector
+version: 1.0.0
+author: bladeacer
+tags: ["development", "utility"]
+homepage: https://github.com/bladeacer/tech-lingo

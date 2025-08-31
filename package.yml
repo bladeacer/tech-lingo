@@ -1,0 +1,52 @@
+matches:
+  # CLI
+  # -----
+  - trigger: "_gh"
+    replace: "GitHub CLI"
+  - trigger: "_Gh"
+    replace: "GitHub CLI. Work seamlessly with GitHub.\nSome subcommands such as config have their own usage documentation."
+  - trigger: "_GH"
+    replace: "GitHub CLI. Work seamlessly with GitHub.\nSome subcommands such as config have their own usage documentation.\n\nMore information: https://cli.github.com/manual/gh. "
+
+  - trigger: "_vim"
+    replace: "Vim (Vi IMproved)"
+  - trigger: "_Vim"
+    replace: "Vim (Vi IMproved), a command-line text editor,\nprovides several modes for different kinds of text manipulation."
+  - trigger: "_VIM"
+    replace: "Vim (Vi IMproved), a command-line text editor,\nprovides several modes for different kinds of text manipulation.\n\nMore information: https://www.vim.org."
+
+  - trigger: "_ssh"
+    replace: "Secure Shell (SSH)"
+  - trigger: "_Ssh"
+    replace: "Secure Shell (SSH) is a protocol used to securely log onto remote systems.\nIt can be used for logging or executing commands on a remote server.."
+  - trigger: "_SSH"
+    replace: "Secure Shell is a protocol used to securely log onto remote systems.\nIt can be used for logging or executing commands on a remote server.\n\nMore information: https://man.openbsd.org/ssh."
+
+  - trigger: "_ls"
+    replace: "List directory contents (ls)"
+  - trigger: "_Ls"
+    replace: "List directory contents.\n\nMore information: https://www.gnu.org/software/coreutils/manual/html_node/ls-invocation.html."
+  - trigger: "_LS"
+    replace: "List directory contents.\n\nMore information: https://www.gnu.org/software/coreutils/manual/html_node/ls-invocation.html."
+
+  - trigger: "_pwd"
+    replace: "Print the name of current/working directory (pwd)."
+  - trigger: "_Pwd"
+    replace: "Print the name of current/working directory (pwd).\n\nMore information: https://www.gnu.org/software/coreutils/manual/html_node/pwd-invocation.html."
+  - trigger: "_PWD"
+    replace: "Print the name of current/working directory (pwd).\n\nMore information: https://www.gnu.org/software/coreutils/manual/html_node/pwd-invocation.html."
+
+  - trigger: "_grep"
+    replace: "Find patterns in files using regexes."
+  - trigger: "_Grep"
+    replace: "Find patterns in files using regexes (regular expressions)."
+  - trigger: "_GREP"
+    replace: "Find patterns in files using regexes (regular expressions).\n\nMore information: https://www.gnu.org/software/grep/manual/grep.html."
+
+  - trigger: "_rg"
+    replace: "Ripgrep, a recursive line-oriented search tool."
+  - trigger: "_Rg"
+    replace: "Ripgrep, a recursive line-oriented search tool.\nAims to be a faster alternative to grep."
+  - trigger: "_RG"
+    replace: "Ripgrep, a recursive line-oriented search tool.\nAims to be a faster alternative to grep.\n\nMore information: https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md."
+  # -----
