@@ -23,160 +23,160 @@ matches:
   # Version Control #
   # =============== #
 
-  - trigger: "_git"
+  - trigger: "_tl-git"
     replace: "git is a distributed version control system."
-  - trigger: "_Git"
+  - trigger: "_tl-Git"
     replace: "git is a distributed version control system.\nSome common subcommands include commit, add, branch, switch, push."
-  - trigger: "_GIT"
+  - trigger: "_tl-GIT"
     replace: "git is a distributed version control system.\nSome common subcommands include commit, add, branch, switch, push.\n\nMore information: https://git-scm.com/docs/git."
 
-  - trigger: "_gh"
+  - trigger: "_tl-gh"
     replace: "gh is a CLI for GitHub."
-  - trigger: "_Gh"
+  - trigger: "_tl-Gh"
     replace: "gh is a Command Line Interface (CLI) which works seamlessly with GitHub.\nSome subcommands such as config have their own usage documentation."
-  - trigger: "_GH"
+  - trigger: "_tl-GH"
     replace: "gh is a Command Line Interface (CLI) which works seamlessly with GitHub.\nSome subcommands such as config have their own usage documentation.\n\nMore information: https://cli.github.com/manual/gh. "
 
-  - trigger: "_svn"
+  - trigger: "_tl-svn"
     replace: "svn is a Subversion client tool."
-  - trigger: "_Svn"
+  - trigger: "_tl-Svn"
     replace: "svn is a Subversion client tool.\n\nMore information: https://svnbook.red-bean.com/en/1.7/svn-book.html#svn.ref.svn."
-  - trigger: "_SVN"
+  - trigger: "_tl-SVN"
     replace: "svn is a Subversion client tool.\n\nMore information: https://svnbook.red-bean.com/en/1.7/svn-book.html#svn.ref.svn."
   
-  - trigger: "_glab"
+  - trigger: "_tl-glab"
     replace: "glab is a CLI for GitLab."
-  - trigger: "_Glab"
+  - trigger: "_tl-Glab"
     replace: "glab is a Command Line Interface (CLI) which works seamlessly with GitLab.\nSome subcommands such as config have their own usage documentation."
-  - trigger: "_GLAB"
+  - trigger: "_tl-GLAB"
     replace: "glab is a Command Line Interface (CLI) which works seamlessly with GitLab.\nSome subcommands such as config have their own usage documentation.\n\nMore information: https://gitlab.com/gitlab-org/cli/-/tree/main/docs/source."
 
   # ============ #
   # Text Editors #
   # ============ #
   
-  - trigger: "_vim"
+  - trigger: "_tl-vim"
     replace: "Vim (Vi IMproved) is a command-line text editor."
-  - trigger: "_Vim"
+  - trigger: "_tl-Vim"
     replace: "Vim (Vi IMproved) is a command-line text editor,\nprovides several modes for different kinds of text manipulation."
-  - trigger: "_VIM"
+  - trigger: "_tl-VIM"
     replace: "Vim (Vi IMproved) is a command-line text editor,\nprovides several modes for different kinds of text manipulation.\nPressing <i> in normal mode enters insert mode.\nPressing <Esc> goes back to normal mode, which enables the use of Vim commands.\n\nRelated to: vimdiff, vimtutor, nvim, gvim.\nMore information: https://www.vim.org."
 
-  - trigger: "_vdiff"
+  - trigger: "_tl-vdiff"
     replace: "vimdiff opens up two or more files in vim and show the differences between them."
-  - trigger: "_Vdiff"
+  - trigger: "_tl-Vdiff"
     replace: "vimdiff open up two or more files in vim and show the differences between them.\nRelated to: vim, vimtutor, nvim."
-  - trigger: "_VDIFF"
+  - trigger: "_tl-VDIFF"
     replace: "Open up two or more files in vim and show the differences between them.\nRelated to: vim, vimtutor, nvim.\n\nMore information: https://www.vim.org."
 
-  - trigger: "_vtutor"
+  - trigger: "_tl-vtutor"
     replace: "vimtutor teaches the basic vim commands."
-  - trigger: "_Vtutor"
+  - trigger: "_tl-Vtutor"
     replace: "vimtutor teaches the basic vim commands.\nRelated to: vim, vimdiff, nvim."
-  - trigger: "_VTUTOR"
+  - trigger: "_tl-VTUTOR"
     replace: "vimtutor teaches the basic vim commands.\nRelated to: vim, vimdiff, nvim.\n\nMore information: https://manned.org/vimtutor."
 
-  - trigger: "_gvim"
+  - trigger: "_tl-gvim"
     replace: "gvim is a Graphical User Interface version of Vim (Vi IMproved), a command-line text editor."
-  - trigger: "_Gvim"
+  - trigger: "_tl-Gvim"
     replace: "gvim is a Graphical User Interface (GUI) version of Vim (Vi IMproved), a command-line text editor.\n\nRelated to: vimdiff, vimtutor, nvim, vim."
-  - trigger: "_GVIM"
+  - trigger: "_tl-GVIM"
     replace: "gvim is a Graphical User Interface version of Vim (Vi IMproved), a command-line text editor.\n\nRelated to: vimdiff, vimtutor, nvim, vim.\nMore information: https://www.vim.org."
 
-  - trigger: "_nvim"
+  - trigger: "_tl-nvim"
     replace: "Neovim is a programmer's text editor based on Vim."
-  - trigger: "_Nvim"
+  - trigger: "_tl-Nvim"
     replace: "Neovim is a programmer's text editor based on Vim,\nwhich provides several modes for different kinds of text manipulation."
-  - trigger: "_NVIM"
+  - trigger: "_tl-NVIM"
     replace: "Neovim is a programmer's text editor based on Vim,\nwhich provides several modes for different kinds of text manipulation.\n\nPressing <i> in normal mode enters insert mode. <Esc> or <Ctrl c> goes back to normal mode, which doesn't allow regular text insertion.\n\nRelated to: vim, vimtutor, vimdiff.\nMore information: https://neovim.io."
 
-  - trigger: "_emacs"
+  - trigger: "_tl-emacs"
     replace: "emacs is an extensible, customizable, self-documenting, real-time display editor."
-  - trigger: "_Emacs"
+  - trigger: "_tl-Emacs"
     replace: "emacs is an extensible, customizable, self-documenting, real-time display editor.\nRelated to: emacsclient."
-  - trigger: "_EMACS"
+  - trigger: "_tl-EMACS"
     replace: "emacs is an extensible, customizable, self-documenting, real-time display editor.\nRelated to: emacsclient.\n\nMore information: https://www.gnu.org/software/emacs."
 
-  - trigger: "_emaclient"
+  - trigger: "_tl-emaclient"
     replace: "emacsclient lets you open files in an existing Emacs server."
-  - trigger: "_Emaclient"
+  - trigger: "_tl-Emaclient"
     replace: "emacsclient lets you open files in an existing Emacs server.\nRelated to: emacs."
-  - trigger: "_EMACLIENT"
+  - trigger: "_tl-EMACLIENT"
     replace: "emacsclient lets you open files in an existing Emacs server.\nRelated to: emacs.\n\nMore information: https://www.gnu.org/software/emacs/manual/html_node/emacs/emacsclient-Options.html."
 
   # =================== #
   # Regular Expressions #
   # =================== #
 
-  - trigger: "_grep"
+  - trigger: "_tl-grep"
     replace: "grep can be used to find patterns in files using regexes."
-  - trigger: "_Grep"
+  - trigger: "_tl-Grep"
     replace: "grep is a CLI tool which can be used to find patterns in files using regexes (regular expressions)."
-  - trigger: "_GREP"
+  - trigger: "_tl-GREP"
     replace: "grep is a CLI tool which can be used to find patterns in files using regexes (regular expressions).\n\nMore information: https://www.gnu.org/software/grep/manual/grep.html."
 
-  - trigger: "_ack"
+  - trigger: "_tl-ack"
     replace: "A search tool like grep, optimized for developers."
-  - trigger: "_Ack"
+  - trigger: "_tl-Ack"
     replace: "A search tool like grep, optimized for developers.\nRelated to: rg, which is much faster."
-  - trigger: "_ACK"
+  - trigger: "_tl-ACK"
     replace: "A search tool like grep, optimized for developers.\nRelated to: rg, which is much faster.\n\nMore information: https://beyondgrep.com/documentation."
 
-  - trigger: "_ag"
+  - trigger: "_tl-ag"
     replace: "ag, the Silver Searcher."
-  - trigger: "_Ag"
+  - trigger: "_tl-Ag"
     replace: "ag, the Silver Searcher.\nLike ack, but aims to be faster."
-  - trigger: "_AG"
+  - trigger: "_tl-AG"
     replace: "ag, the Silver Searcher.\nLike ack, but aims to be faster.\n\nMore information: https://manned.org/ag."
 
-  - trigger: "_rg"
+  - trigger: "_tl-rg"
     replace: "ripgrep, a recursive line-oriented search tool."
-  - trigger: "_Rg"
+  - trigger: "_tl-Rg"
     replace: "ripgrep, a recursive line-oriented search tool.\nAims to be a faster alternative to grep."
-  - trigger: "_RG"
+  - trigger: "_tl-RG"
     replace: "ripgrep, a recursive line-oriented search tool.\nAims to be a faster alternative to grep.\n\nMore information: https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md."
 
   # ================= #
   # File Manipulation #
   # ================= #
 
-  - trigger: "_awk"
+  - trigger: "_tl-awk"
     replace: "awk is a versatile programming language for working on files."
-  - trigger: "_Awk"
+  - trigger: "_tl-Awk"
     replace: "awk is a versatile programming language for working on files.\nNote: Different implementations of AWK often make this a symlink of their binary.\nRelated to: gawk."
-  - trigger: "_AWK"
+  - trigger: "_tl-AWK"
     replace: "awk is a versatile programming language for working on files.\nNote: Different implementations of AWK often make this a symlink of their binary.\nRelated to: gawk.\n\nMore information: https://github.com/onetrueawk/awk."
 
-  - trigger: "_gawk"
+  - trigger: "_tl-gawk"
     replace: "GNU version of awk, a versatile programming language for working on files."
-  - trigger: "_Gawk"
+  - trigger: "_tl-Gawk"
     replace: "GNU version of awk, a versatile programming language for working on files.\nRelated to: awk."
-  - trigger: "_GAWK"
+  - trigger: "_tl-GAWK"
     replace: "GNU version of awk, a versatile programming language for working on files.\nRelated to: awk.\n\nMore information: https://www.gnu.org/software/gawk/manual/gawk.html."
       
   # ============= #
   # UNIX Commands #
   # ============= #
 
-  - trigger: "_ssh"
+  - trigger: "_tl-ssh"
     replace: "Secure Shell (SSH)"
-  - trigger: "_Ssh"
+  - trigger: "_tl-Ssh"
     replace: "Secure Shell (SSH) is a protocol used to securely log onto remote systems.\nIt can be used for logging or executing commands on a remote server.."
-  - trigger: "_SSH"
+  - trigger: "_tl-SSH"
     replace: "Secure Shell is a protocol used to securely log onto remote systems.\nIt can be used for logging or executing commands on a remote server.\n\nMore information: https://man.openbsd.org/ssh."
 
-  - trigger: "_ls"
+  - trigger: "_tl-ls"
     replace: "List directory contents (ls)"
-  - trigger: "_Ls"
+  - trigger: "_tl-Ls"
     replace: "List directory contents.\n\nMore information: https://www.gnu.org/software/coreutils/manual/html_node/ls-invocation.html."
-  - trigger: "_LS"
+  - trigger: "_tl-LS"
     replace: "List directory contents.\n\nMore information: https://www.gnu.org/software/coreutils/manual/html_node/ls-invocation.html."
 
-  - trigger: "_pwd"
+  - trigger: "_tl-pwd"
     replace: "Print the name of current/working directory (pwd)."
-  - trigger: "_Pwd"
+  - trigger: "_tl-Pwd"
     replace: "Print the name of current/working directory (pwd).\n\nMore information: https://www.gnu.org/software/coreutils/manual/html_node/pwd-invocation.html."
-  - trigger: "_PWD"
+  - trigger: "_tl-PWD"
     replace: "Print the name of current/working directory (pwd).\n\nMore information: https://www.gnu.org/software/coreutils/manual/html_node/pwd-invocation.html."
 
   # ================================================================================ #
@@ -185,27 +185,4 @@ matches:
   
 # ================================================================================ #
 # --- End of CC BY-SA 4.0 Licensed Code derived from tldr-pages ---                #
-# ================================================================================ #
-
-# ================================================================================ #
-# --- Start of CC BY-SA 4.0 Licensed Code derived from Wikipedia ---               #
-# ================================================================================ #
-
-  # ================================================================================ #
-  # Start of Organisations                                                           #
-  # ================================================================================ #
-  
-  - trigger: "_fsf"
-    replace: "The Free Software Foundation (FSF) is a non-profit organisation which supports the free software movement\nwith its preference for software being distributed under copyleft terms."
-  - trigger: "_Fsf"
-    replace: "The Free Software Foundation (FSF) is a non-profit organisation founded by Richard Stallman.\n\nThe organisation supports the free software movement, with its preference for software being distributed under copyleft ('share alike') terms.\nFor more information: https://en.wikipedia.org/wiki/Free_Software_Foundation."
-  - trigger: "_FSF"
-    replace: "The Free Software Foundation (FSF) is a 501(c)(3) non-profit organisation founded by Richard Stallman on October 4, 1985.\n\nThe organisation supports the free software movement, with its preference for software being distributed under copyleft ('share alike') terms,\nsuch as with its own GNU General Public License.\nFor more information: https://en.wikipedia.org/wiki/Free_Software_Foundation."
-
-  # ================================================================================ #
-  # End of Organisations                                                             #
-  # ================================================================================ #
-
-# ================================================================================ #
-# --- End of CC BY-SA 4.0 Licensed Code derived from Wikipedia ---                 #
 # ================================================================================ #
