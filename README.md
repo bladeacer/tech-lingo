@@ -13,6 +13,9 @@ espanso install tech-lingo --git https://github.com/bladeacer/tech-lingo --exter
 
 ## FAQ
 
+### Where are all the text snippet triggers documented?
+In the [schema](./schema.md) file.
+
 ### Why underscore as the trigger prefix?
 `_` conflicts less than `:` or `/` especially in editors like Vim.
 
