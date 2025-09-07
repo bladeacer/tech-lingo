@@ -116,11 +116,11 @@ matches:
     replace: "grep is a CLI tool which can be used to find patterns in files using regexes (regular expressions).\n\nMore information: https://www.gnu.org/software/grep/manual/grep.html."
 
   - trigger: "_ack"
-    replace: "A search tool like grep, optimized for developers."
+    replace: "ack is a search tool like grep, optimized for developers."
   - trigger: "_Ack"
-    replace: "A search tool like grep, optimized for developers.\nRelated to: rg, which is much faster."
+    replace: "ack is a search tool like grep, optimized for developers.\nRelated to: rg, which is much faster."
   - trigger: "_ACK"
-    replace: "A search tool like grep, optimized for developers.\nRelated to: rg, which is much faster.\n\nMore information: https://beyondgrep.com/documentation."
+    replace: "ack is a search tool like grep, optimized for developers.\nRelated to: rg, which is much faster.\n\nMore information: https://beyondgrep.com/documentation."
 
   - trigger: "_ag"
     replace: "ag, the Silver Searcher."

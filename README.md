@@ -14,7 +14,12 @@ espanso install tech-lingo --git https://github.com/bladeacer/tech-lingo --exter
 ## FAQ
 
 ### Where are all the text snippet triggers documented?
-In the [schema](./schema.md) file.
+In the [schema](./schema.md) file. 
+
+> For development, one can just run the create_schema.py script.
+>
+> It spawns a file system poller and lets you live preview changes to the schema
+> whenever you update a `.yml` file
 
 ### Why underscore as the trigger prefix?
 `_` conflicts less than `:` or `/` especially in editors like Vim.
@@ -66,6 +71,13 @@ either the other source.
 
 This means if tldr pages has description of `cli-x` while Wikipedia does not,
 the tldr pages description will still show when you run `_wk-cli-x`
+
+### Shorthands and URLs
+You can make use of the `__` prefix for strict shorthand expansion and the `_u-`
+prefix for URL expansion.
+
+E.g. `__vim` > Vim (Vi IMproved)
+E.g. `_u-vim` > https://www.vim.org/
 
 ### Where is the source attribution?
 By default, running the least verbose version of the snippet would not include attribution.

@@ -1,0 +1,101 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 2rem;
+  color: #1f2937;
+}
+
+/* Main container styling */
+.container {
+  max-width: 56rem;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .header {
+    flex-direction: row;
+  }
+}
+
+.header h1 {
+  font-size: 1.875rem; /* Equivalent to text-3xl */
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .header h1 {
+    margin-bottom: 0;
+  }
+}
+
+/* Button styling */
+
+#refreshButton {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px; /* Equivalent to rounded-full */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#refreshButton:hover {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+
+/* Markdown content styling */
+.markdown-body h1, .markdown-body h2 {
+  font-weight: 700;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.markdown-body th, .markdown-body td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.markdown-body th {
+  background-color: #f9fafb;
+  font-weight: 600;
+}
+
+.markdown-body pre {
+  background-color: #f4f4f5;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}

@@ -1,0 +1,67 @@
+# ================================================================================ #
+# This Espanso package is dual-licensed.                                           #
+#                                                                                  #
+# The original Espanso rules, structure, and custom code within this file are      #
+# licensed under the GNU General Public License v3.0 (GPLv3).                      #
+# You can find the full license text in the LICENSE.GPL file.                      #
+#                                                                                  #
+# The text descriptions sourced from tldr-pages and Wikipedia are licensed under   #
+# the Creative Commons Attribution-ShareAlike 4.0 International License            #
+# (CC BY-SA 4.0). You can find the full license text in the LICENSE.CC-BY-SA file. #
+# ================================================================================ #
+
+# ================================================================================ #
+# --- Start of CC BY-SA 4.0 Licensed Code derived from tldr-pages or Wikipedia --- #
+# ================================================================================ #
+
+matches:
+  # ================================================================================ #
+  # Start of CLI                                                                     #
+  # ================================================================================ #
+  
+  # =============== #
+  # Version Control #
+  # =============== #
+
+  - trigger: "_u-git"
+    replace: "https://git-scm.com/"
+  - trigger: "_u-Git"
+    replace: "https://git-scm.com/"
+  - trigger: "_u-GIT"
+    replace: "https://git-scm.com/"
+  - trigger: "__git"
+    replace: "Git"
+  - trigger: "__Git"
+    replace: "Git VCS"
+  - trigger: "__GIT"
+    replace: "Git (version control system)"
+
+  - trigger: "_u-ack"
+    replace: "https://beyondgrep.com/"
+  - trigger: "_u-Ack"
+    replace: "https://beyondgrep.com/"
+  - trigger: "_u-ACK"
+    replace: "https://beyondgrep.com/"
+  - trigger: "__ack"
+    replace: "ack"
+  - trigger: "__Ack"
+    replace: "ack search"
+  - trigger: "__ACK"
+    replace: "ack (search tool)"
+
+  - trigger: "_u-ag"
+    replace: "https://github.com/ggreer/the_silver_searcher"
+  - trigger: "_u-Ag"
+    replace: "https://github.com/ggreer/the_silver_searcher"
+  - trigger: "_u-AG"
+    replace: "https://github.com/ggreer/the_silver_searcher"
+  - trigger: "__ag"
+    replace: "ag"
+  - trigger: "__Ag"
+    replace: "ag search"
+  - trigger: "__AG"
+    replace: "ag (Silver Searcher)"
+
+# ================================================================================ #
+# --- End of CC BY-SA 4.0 Licensed Code derived from tldr-pages or Wikipedia ---   #
+# ================================================================================ #

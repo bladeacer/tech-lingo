@@ -4,29 +4,29 @@
 
 This table shows which case and source variants are defined for each trigger.
 
-| Base Trigger | `_` | `_wk-` | `_tl-` |
-| :--- | :---: | :---: | :---: |
-| `ack` | ✓ | ✓ | ✓ |
-| `ag` | ✓ | ✓ | ✓ |
-| `awk` | ✓ | ✓ | ✓ |
-| `emaclient` | ✓ | ✓ | ✓ |
-| `emacs` | ✓ | ✓ | ✓ |
-| `fsf` | ✓ | ✓ | ✓ |
-| `gawk` | ✓ | ✓ | ✓ |
-| `gh` | ✓ | ✓ | ✓ |
-| `git` | ✓ | ✓ | ✓ |
-| `glab` | ✓ | ✓ | ✓ |
-| `grep` | ✓ | ✓ | ✓ |
-| `gvim` | ✓ | ✓ | ✓ |
-| `ls` | ✓ | ✓ | ✓ |
-| `nvim` | ✓ | ✓ | ✓ |
-| `pwd` | ✓ | ✓ | ✓ |
-| `rg` | ✓ | ✓ | ✓ |
-| `ssh` | ✓ | ✓ | ✓ |
-| `svn` | ✓ | ✓ | ✓ |
-| `vdiff` | ✓ | ✓ | ✓ |
-| `vim` | ✓ | ✓ | ✓ |
-| `vtutor` | ✓ | ✓ | ✓ |
+| Base Trigger | `_` | `_wk-` | `_tl-` | `__` | `_u-` |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| `ack` | ✓ | ✓ | ✓ | ✓ | ✓ |
+| `ag` | ✓ | ✓ | ✓ | ✓ | ✓ |
+| `awk` | ✓ | ✓ | ✓ | **✗** | **✗** |
+| `emaclient` | ✓ | ✓ | ✓ | **✗** | **✗** |
+| `emacs` | ✓ | ✓ | ✓ | **✗** | **✗** |
+| `fsf` | ✓ | ✓ | ✓ | **✗** | **✗** |
+| `gawk` | ✓ | ✓ | ✓ | **✗** | **✗** |
+| `gh` | ✓ | ✓ | ✓ | **✗** | **✗** |
+| `git` | ✓ | ✓ | ✓ | ✓ | ✓ |
+| `glab` | ✓ | ✓ | ✓ | **✗** | **✗** |
+| `grep` | ✓ | ✓ | ✓ | **✗** | **✗** |
+| `gvim` | ✓ | ✓ | ✓ | **✗** | **✗** |
+| `ls` | ✓ | ✓ | ✓ | **✗** | **✗** |
+| `nvim` | ✓ | ✓ | ✓ | **✗** | **✗** |
+| `pwd` | ✓ | ✓ | ✓ | **✗** | **✗** |
+| `rg` | ✓ | ✓ | ✓ | **✗** | **✗** |
+| `ssh` | ✓ | ✓ | ✓ | **✗** | **✗** |
+| `svn` | ✓ | ✓ | ✓ | **✗** | **✗** |
+| `vdiff` | ✓ | ✓ | ✓ | **✗** | **✗** |
+| `vim` | ✓ | ✓ | ✓ | **✗** | **✗** |
+| `vtutor` | ✓ | ✓ | ✓ | **✗** | **✗** |
 
 
 ## All Triggers and Expansions
@@ -35,9 +35,18 @@ This document lists all triggers and their corresponding expansions from the YAM
 
 | Trigger | Expansion |
 | :--- | :--- |
-| `_ack` | A search tool like grep, optimized for developers. |
-| `_Ack` | A search tool like grep, optimized for developers. Related to: rg, which is much faster. |
-| `_ACK` | A search tool like grep, optimized for developers. Related to: rg, which is much faster.  More information: https://beyondgrep.com/documentation. |
+| `__ack` | ack |
+| `__Ack` | ack search |
+| `__ACK` | ack (search tool) |
+| `__ag` | ag |
+| `__Ag` | ag search |
+| `__AG` | ag (Silver Searcher) |
+| `__git` | Git |
+| `__Git` | Git VCS |
+| `__GIT` | Git (version control system) |
+| `_ack` | ack is a search tool like grep, optimized for developers. |
+| `_Ack` | ack is a search tool like grep, optimized for developers. Related to: rg, which is much faster. |
+| `_ACK` | ack is a search tool like grep, optimized for developers. Related to: rg, which is much faster.  More information: https://beyondgrep.com/documentation. |
 | `_ag` | ag, the Silver Searcher. |
 | `_Ag` | ag, the Silver Searcher. Like ack, but aims to be faster. |
 | `_AG` | ag, the Silver Searcher. Like ack, but aims to be faster.  More information: https://manned.org/ag. |
@@ -89,9 +98,9 @@ This document lists all triggers and their corresponding expansions from the YAM
 | `_svn` | svn is a Subversion client tool. |
 | `_Svn` | svn is a Subversion client tool.  More information: https://svnbook.red-bean.com/en/1.7/svn-book.html#svn.ref.svn. |
 | `_SVN` | svn is a Subversion client tool.  More information: https://svnbook.red-bean.com/en/1.7/svn-book.html#svn.ref.svn. |
-| `_tl-ack` | A search tool like grep, optimized for developers. |
-| `_tl-Ack` | A search tool like grep, optimized for developers. Related to: rg, which is much faster. |
-| `_tl-ACK` | A search tool like grep, optimized for developers. Related to: rg, which is much faster.  More information: https://beyondgrep.com/documentation. |
+| `_tl-ack` | ack is a search tool like grep, optimized for developers. |
+| `_tl-Ack` | ack is a search tool like grep, optimized for developers. Related to: rg, which is much faster. |
+| `_tl-ACK` | ack is a search tool like grep, optimized for developers. Related to: rg, which is much faster.  More information: https://beyondgrep.com/documentation. |
 | `_tl-ag` | ag, the Silver Searcher. |
 | `_tl-Ag` | ag, the Silver Searcher. Like ack, but aims to be faster. |
 | `_tl-AG` | ag, the Silver Searcher. Like ack, but aims to be faster.  More information: https://manned.org/ag. |
@@ -152,6 +161,15 @@ This document lists all triggers and their corresponding expansions from the YAM
 | `_tl-vtutor` | vimtutor teaches the basic vim commands. |
 | `_tl-Vtutor` | vimtutor teaches the basic vim commands. Related to: vim, vimdiff, nvim. |
 | `_tl-VTUTOR` | vimtutor teaches the basic vim commands. Related to: vim, vimdiff, nvim.  More information: https://manned.org/vimtutor. |
+| `_u-ack` | https://beyondgrep.com/ |
+| `_u-Ack` | https://beyondgrep.com/ |
+| `_u-ACK` | https://beyondgrep.com/ |
+| `_u-ag` | https://github.com/ggreer/the_silver_searcher |
+| `_u-Ag` | https://github.com/ggreer/the_silver_searcher |
+| `_u-AG` | https://github.com/ggreer/the_silver_searcher |
+| `_u-git` | https://git-scm.com/ |
+| `_u-Git` | https://git-scm.com/ |
+| `_u-GIT` | https://git-scm.com/ |
 | `_vdiff` | vimdiff opens up two or more files in vim and show the differences between them. |
 | `_Vdiff` | vimdiff open up two or more files in vim and show the differences between them. Related to: vim, vimtutor, nvim. |
 | `_VDIFF` | Open up two or more files in vim and show the differences between them. Related to: vim, vimtutor, nvim.  More information: https://www.vim.org. |
@@ -161,9 +179,9 @@ This document lists all triggers and their corresponding expansions from the YAM
 | `_vtutor` | vimtutor teaches the basic vim commands. |
 | `_Vtutor` | vimtutor teaches the basic vim commands. Related to: vim, vimdiff, nvim. |
 | `_VTUTOR` | vimtutor teaches the basic vim commands. Related to: vim, vimdiff, nvim.  More information: https://manned.org/vimtutor. |
-| `_wk-ack` | A search tool like grep, optimized for developers. |
-| `_wk-Ack` | A search tool like grep, optimized for developers. Related to: rg, which is much faster. |
-| `_wk-ACK` | A search tool like grep, optimized for developers. Related to: rg, which is much faster.  More information: https://beyondgrep.com/documentation. |
+| `_wk-ack` | ack is a search tool like grep, optimized for developers. |
+| `_wk-Ack` | ack is a search tool like grep, optimized for developers. Related to: rg, which is much faster. |
+| `_wk-ACK` | ack is a search tool like grep, optimized for developers. Related to: rg, which is much faster.  More information: https://beyondgrep.com/documentation. |
 | `_wk-ag` | ag, the Silver Searcher. |
 | `_wk-Ag` | ag, the Silver Searcher. Like ack, but aims to be faster. |
 | `_wk-AG` | ag, the Silver Searcher. Like ack, but aims to be faster.  More information: https://manned.org/ag. |
