@@ -20,6 +20,16 @@ matches:
   # Start of CLI                                                                     #
   # ================================================================================ #
   
+  # ========= #
+  # Debugging #
+  # ========= #
+  - trigger: "_wk-rr"
+    replace: "rr is a debugging tool."
+  - trigger: "_wk-Rr"
+    replace: "rr is a debugging tool designed to record and replay programme execution.\n\nMore information: https://en.wikipedia.org/wiki/Rr_(debugging)"
+  - trigger: "_wk-RR"
+    replace: "rr is a debugging tool designed to record and replay programme execution.\nDuring the replay phase, rr supports reverse execution.\n\nMore information: https://en.wikipedia.org/wiki/Rr_(debugging)"
+  
   # =============== #
   # Version Control #
   # =============== #
@@ -188,14 +198,28 @@ matches:
   # ================================================================================ #
   
   - trigger: "_wk-fsf"
-    replace: "The Free Software Foundation (FSF) is a non-profit organisation which supports the free software movement\nwith its preference for software being distributed under copyleft terms."
+    replace: "The Free Software Foundation (FSF) is a non-profit organisation which supports the free software movement\nwith its preference that software be distributed under copyleft terms."
   - trigger: "_wk-Fsf"
-    replace: "The Free Software Foundation (FSF) is a non-profit organisation founded by Richard Stallman.\n\nThe organisation supports the free software movement, with its preference for software being distributed under copyleft ('share alike') terms.\nFor more information: https://en.wikipedia.org/wiki/Free_Software_Foundation."
+    replace: "The Free Software Foundation (FSF) is a non-profit organisation founded by Richard Stallman.\n\nThe organisation supports the free software movement, with its preference that software be distributed under copyleft ('share alike') terms.\nFor more information: https://en.wikipedia.org/wiki/Free_Software_Foundation."
   - trigger: "_wk-FSF"
-    replace: "The Free Software Foundation (FSF) is a 501(c)(3) non-profit organisation founded by Richard Stallman on October 4, 1985.\n\nThe organisation supports the free software movement, with its preference for software being distributed under copyleft ('share alike') terms,\nsuch as with its own GNU General Public License.\nFor more information: https://en.wikipedia.org/wiki/Free_Software_Foundation."
+    replace: "The Free Software Foundation (FSF) is a 501(c)(3) non-profit organisation founded by Richard Stallman on October 4, 1985.\n\nThe organisation supports the free software movement, with its preference that software be distributed under copyleft ('share alike') terms,\nsuch as with its own GNU General Public License.\nFor more information: https://en.wikipedia.org/wiki/Free_Software_Foundation."
 
   # ================================================================================ #
   # End of Organisations                                                             #
+  # ================================================================================ #
+
+  # ================================================================================ #
+  # Start of Terminology                                                             #
+  # ================================================================================ #
+  - trigger: "_wk-rnrb"
+    replace: "Round Robin is an algorithm employed by schedulers in computing."
+  - trigger: "_wk-Rnrb"
+    replace: "Round Robin is one of the algorithms employed by process and network schedulers in computing.\n\nSource: https://en.wikipedia.org/wiki/Round-robin_scheduling"
+  - trigger: "_wk-RNRB"
+    replace: "Round Robin is one of the algorithms employed by process and network schedulers in computing.\nProcesses are assigned time slices in equal portions and circular order.\n\nSource: https://en.wikipedia.org/wiki/Round-robin_scheduling"
+
+  # ================================================================================ #
+  # End of Terminology                                                               #
   # ================================================================================ #
 
 # ================================================================================ #

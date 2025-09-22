@@ -13,15 +13,17 @@ This table shows which case and source variants are defined for each trigger.
 | `emacs` | ✓ | ✓ | ✓ | **✗** | **✗** |
 | `fsf` | ✓ | ✓ | ✓ | **✗** | **✗** |
 | `gawk` | ✓ | ✓ | ✓ | **✗** | **✗** |
-| `gh` | ✓ | ✓ | ✓ | **✗** | **✗** |
+| `gh` | ✓ | ✓ | ✓ | ✓ | ✓ |
 | `git` | ✓ | ✓ | ✓ | ✓ | ✓ |
-| `glab` | ✓ | ✓ | ✓ | **✗** | **✗** |
+| `glab` | ✓ | ✓ | ✓ | ✓ | ✓ |
 | `grep` | ✓ | ✓ | ✓ | **✗** | **✗** |
 | `gvim` | ✓ | ✓ | ✓ | **✗** | **✗** |
 | `ls` | ✓ | ✓ | ✓ | **✗** | **✗** |
 | `nvim` | ✓ | ✓ | ✓ | **✗** | **✗** |
 | `pwd` | ✓ | ✓ | ✓ | **✗** | **✗** |
 | `rg` | ✓ | ✓ | ✓ | **✗** | **✗** |
+| `rnrb` | ✓ | ✓ | ✓ | ✓ | ✓ |
+| `rr` | ✓ | ✓ | ✓ | ✓ | ✓ |
 | `ssh` | ✓ | ✓ | ✓ | **✗** | **✗** |
 | `svn` | ✓ | ✓ | ✓ | **✗** | **✗** |
 | `vdiff` | ✓ | ✓ | ✓ | **✗** | **✗** |
@@ -41,9 +43,21 @@ This document lists all triggers and their corresponding expansions from the YAM
 | `__ag` | ag |
 | `__Ag` | ag search |
 | `__AG` | ag (Silver Searcher) |
+| `__gh` | GitHub |
+| `__Gh` | GitHub |
+| `__GH` | GitHub (Git server) |
 | `__git` | Git |
 | `__Git` | Git VCS |
 | `__GIT` | Git (version control system) |
+| `__glab` | GitLab |
+| `__Glab` | GitLab |
+| `__GLAB` | GitLab (Git server) |
+| `__rnrb` | Round Robin |
+| `__Rnrb` | Round Robin (scheduling) |
+| `__RNRB` | Round Robin (scheduling algorithm) |
+| `__rr` | rr |
+| `__Rr` | rr (debugging tool) |
+| `__RR` | rr (application execution debugging tool) |
 | `_ack` | ack is a search tool like grep, optimized for developers. |
 | `_Ack` | ack is a search tool like grep, optimized for developers. Related to: rg, which is much faster. |
 | `_ACK` | ack is a search tool like grep, optimized for developers. Related to: rg, which is much faster.  More information: https://beyondgrep.com/documentation. |
@@ -59,9 +73,9 @@ This document lists all triggers and their corresponding expansions from the YAM
 | `_emacs` | emacs is an extensible, customizable, self-documenting, real-time display editor. |
 | `_Emacs` | emacs is an extensible, customizable, self-documenting, real-time display editor. Related to: emacsclient. |
 | `_EMACS` | emacs is an extensible, customizable, self-documenting, real-time display editor. Related to: emacsclient.  More information: https://www.gnu.org/software/emacs. |
-| `_fsf` | The Free Software Foundation (FSF) is a non-profit organisation which supports the free software movement with its preference for software being distributed under copyleft terms. |
-| `_Fsf` | The Free Software Foundation (FSF) is a non-profit organisation founded by Richard Stallman.  The organisation supports the free software movement, with its preference for software being distributed under copyleft ('share alike') terms. For more information: https://en.wikipedia.org/wiki/Free_Software_Foundation. |
-| `_FSF` | The Free Software Foundation (FSF) is a 501(c)(3) non-profit organisation founded by Richard Stallman on October 4, 1985.  The organisation supports the free software movement, with its preference for software being distributed under copyleft ('share alike') terms, such as with its own GNU General Public License. For more information: https://en.wikipedia.org/wiki/Free_Software_Foundation. |
+| `_fsf` | The Free Software Foundation (FSF) is a non-profit organisation which supports the free software movement with its preference that software be distributed under copyleft terms. |
+| `_Fsf` | The Free Software Foundation (FSF) is a non-profit organisation founded by Richard Stallman.  The organisation supports the free software movement, with its preference that software be distributed under copyleft ('share alike') terms. For more information: https://en.wikipedia.org/wiki/Free_Software_Foundation. |
+| `_FSF` | The Free Software Foundation (FSF) is a 501(c)(3) non-profit organisation founded by Richard Stallman on October 4, 1985.  The organisation supports the free software movement, with its preference that software be distributed under copyleft ('share alike') terms, such as with its own GNU General Public License. For more information: https://en.wikipedia.org/wiki/Free_Software_Foundation. |
 | `_gawk` | GNU version of awk, a versatile programming language for working on files. |
 | `_Gawk` | GNU version of awk, a versatile programming language for working on files. Related to: awk. |
 | `_GAWK` | GNU version of awk, a versatile programming language for working on files. Related to: awk.  More information: https://www.gnu.org/software/gawk/manual/gawk.html. |
@@ -92,6 +106,12 @@ This document lists all triggers and their corresponding expansions from the YAM
 | `_rg` | ripgrep, a recursive line-oriented search tool. |
 | `_Rg` | ripgrep, a recursive line-oriented search tool. Aims to be a faster alternative to grep. |
 | `_RG` | ripgrep, a recursive line-oriented search tool. Aims to be a faster alternative to grep.  More information: https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md. |
+| `_rnrb` | Round Robin is an algorithm employed by schedulers in computing. |
+| `_Rnrb` | Round Robin is one of the algorithms employed by process and network schedulers in computing.  Source: https://en.wikipedia.org/wiki/Round-robin_scheduling |
+| `_RNRB` | Round Robin is one of the algorithms employed by process and network schedulers in computing. Processes are assigned time slices in equal portions and circular order.  Source: https://en.wikipedia.org/wiki/Round-robin_scheduling |
+| `_rr` | rr is a debugging tool. |
+| `_Rr` | rr is a debugging tool designed to record and replay programme execution.  More information: https://github.com/rr-debugger/rr/wiki/Usage. |
+| `_RR` | rr is a debugging tool designed to record and replay programme execution.  More information: https://github.com/rr-debugger/rr/wiki/Usage. |
 | `_ssh` | Secure Shell (SSH) |
 | `_Ssh` | Secure Shell (SSH) is a protocol used to securely log onto remote systems. It can be used for logging or executing commands on a remote server.. |
 | `_SSH` | Secure Shell is a protocol used to securely log onto remote systems. It can be used for logging or executing commands on a remote server.  More information: https://man.openbsd.org/ssh. |
@@ -113,9 +133,9 @@ This document lists all triggers and their corresponding expansions from the YAM
 | `_tl-emacs` | emacs is an extensible, customizable, self-documenting, real-time display editor. |
 | `_tl-Emacs` | emacs is an extensible, customizable, self-documenting, real-time display editor. Related to: emacsclient. |
 | `_tl-EMACS` | emacs is an extensible, customizable, self-documenting, real-time display editor. Related to: emacsclient.  More information: https://www.gnu.org/software/emacs. |
-| `_tl-fsf` | The Free Software Foundation (FSF) is a non-profit organisation which supports the free software movement with its preference for software being distributed under copyleft terms. |
-| `_tl-Fsf` | The Free Software Foundation (FSF) is a non-profit organisation founded by Richard Stallman.  The organisation supports the free software movement, with its preference for software being distributed under copyleft ('share alike') terms. For more information: https://en.wikipedia.org/wiki/Free_Software_Foundation. |
-| `_tl-FSF` | The Free Software Foundation (FSF) is a 501(c)(3) non-profit organisation founded by Richard Stallman on October 4, 1985.  The organisation supports the free software movement, with its preference for software being distributed under copyleft ('share alike') terms, such as with its own GNU General Public License. For more information: https://en.wikipedia.org/wiki/Free_Software_Foundation. |
+| `_tl-fsf` | The Free Software Foundation (FSF) is a non-profit organisation which supports the free software movement with its preference that software be distributed under copyleft terms. |
+| `_tl-Fsf` | The Free Software Foundation (FSF) is a non-profit organisation founded by Richard Stallman.  The organisation supports the free software movement, with its preference that software be distributed under copyleft ('share alike') terms. For more information: https://en.wikipedia.org/wiki/Free_Software_Foundation. |
+| `_tl-FSF` | The Free Software Foundation (FSF) is a 501(c)(3) non-profit organisation founded by Richard Stallman on October 4, 1985.  The organisation supports the free software movement, with its preference that software be distributed under copyleft ('share alike') terms, such as with its own GNU General Public License. For more information: https://en.wikipedia.org/wiki/Free_Software_Foundation. |
 | `_tl-gawk` | GNU version of awk, a versatile programming language for working on files. |
 | `_tl-Gawk` | GNU version of awk, a versatile programming language for working on files. Related to: awk. |
 | `_tl-GAWK` | GNU version of awk, a versatile programming language for working on files. Related to: awk.  More information: https://www.gnu.org/software/gawk/manual/gawk.html. |
@@ -146,6 +166,12 @@ This document lists all triggers and their corresponding expansions from the YAM
 | `_tl-rg` | ripgrep, a recursive line-oriented search tool. |
 | `_tl-Rg` | ripgrep, a recursive line-oriented search tool. Aims to be a faster alternative to grep. |
 | `_tl-RG` | ripgrep, a recursive line-oriented search tool. Aims to be a faster alternative to grep.  More information: https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md. |
+| `_tl-rnrb` | Round Robin is an algorithm employed by schedulers in computing. |
+| `_tl-Rnrb` | Round Robin is one of the algorithms employed by process and network schedulers in computing.  Source: https://en.wikipedia.org/wiki/Round-robin_scheduling |
+| `_tl-RNRB` | Round Robin is one of the algorithms employed by process and network schedulers in computing. Processes are assigned time slices in equal portions and circular order.  Source: https://en.wikipedia.org/wiki/Round-robin_scheduling |
+| `_tl-rr` | rr is a debugging tool. |
+| `_tl-Rr` | rr is a debugging tool designed to record and replay programme execution.  More information: https://github.com/rr-debugger/rr/wiki/Usage. |
+| `_tl-RR` | rr is a debugging tool designed to record and replay programme execution.  More information: https://github.com/rr-debugger/rr/wiki/Usage. |
 | `_tl-ssh` | Secure Shell (SSH) |
 | `_tl-Ssh` | Secure Shell (SSH) is a protocol used to securely log onto remote systems. It can be used for logging or executing commands on a remote server.. |
 | `_tl-SSH` | Secure Shell is a protocol used to securely log onto remote systems. It can be used for logging or executing commands on a remote server.  More information: https://man.openbsd.org/ssh. |
@@ -167,9 +193,21 @@ This document lists all triggers and their corresponding expansions from the YAM
 | `_u-ag` | https://github.com/ggreer/the_silver_searcher |
 | `_u-Ag` | https://github.com/ggreer/the_silver_searcher |
 | `_u-AG` | https://github.com/ggreer/the_silver_searcher |
+| `_u-gh` | https://github.com |
+| `_u-Gh` | https://github.com |
+| `_u-GH` | https://github.com |
 | `_u-git` | https://git-scm.com/ |
 | `_u-Git` | https://git-scm.com/ |
 | `_u-GIT` | https://git-scm.com/ |
+| `_u-glab` | https://gitlab.com |
+| `_u-Glab` | https://gitlab.com |
+| `_u-GLAB` | https://gitlab.com |
+| `_u-rnrb` | https://en.wikipedia.org/wiki/Round-robin_scheduling |
+| `_u-Rnrb` | https://en.wikipedia.org/wiki/Round-robin_scheduling |
+| `_u-RNRB` | https://en.wikipedia.org/wiki/Round-robin_scheduling |
+| `_u-rr` | https://github.com/rr-debugger/rr |
+| `_u-Rr` | https://github.com/rr-debugger/rr |
+| `_u-RR` | https://github.com/rr-debugger/rr |
 | `_vdiff` | vimdiff opens up two or more files in vim and show the differences between them. |
 | `_Vdiff` | vimdiff open up two or more files in vim and show the differences between them. Related to: vim, vimtutor, nvim. |
 | `_VDIFF` | Open up two or more files in vim and show the differences between them. Related to: vim, vimtutor, nvim.  More information: https://www.vim.org. |
@@ -194,9 +232,9 @@ This document lists all triggers and their corresponding expansions from the YAM
 | `_wk-emacs` | emacs is an extensible, customizable, self-documenting, real-time display editor. |
 | `_wk-Emacs` | emacs is an extensible, customizable, self-documenting, real-time display editor. Related to: emacsclient. |
 | `_wk-EMACS` | emacs is an extensible, customizable, self-documenting, real-time display editor. Related to: emacsclient.  More information: https://www.gnu.org/software/emacs. |
-| `_wk-fsf` | The Free Software Foundation (FSF) is a non-profit organisation which supports the free software movement with its preference for software being distributed under copyleft terms. |
-| `_wk-Fsf` | The Free Software Foundation (FSF) is a non-profit organisation founded by Richard Stallman.  The organisation supports the free software movement, with its preference for software being distributed under copyleft ('share alike') terms. For more information: https://en.wikipedia.org/wiki/Free_Software_Foundation. |
-| `_wk-FSF` | The Free Software Foundation (FSF) is a 501(c)(3) non-profit organisation founded by Richard Stallman on October 4, 1985.  The organisation supports the free software movement, with its preference for software being distributed under copyleft ('share alike') terms, such as with its own GNU General Public License. For more information: https://en.wikipedia.org/wiki/Free_Software_Foundation. |
+| `_wk-fsf` | The Free Software Foundation (FSF) is a non-profit organisation which supports the free software movement with its preference that software be distributed under copyleft terms. |
+| `_wk-Fsf` | The Free Software Foundation (FSF) is a non-profit organisation founded by Richard Stallman.  The organisation supports the free software movement, with its preference that software be distributed under copyleft ('share alike') terms. For more information: https://en.wikipedia.org/wiki/Free_Software_Foundation. |
+| `_wk-FSF` | The Free Software Foundation (FSF) is a 501(c)(3) non-profit organisation founded by Richard Stallman on October 4, 1985.  The organisation supports the free software movement, with its preference that software be distributed under copyleft ('share alike') terms, such as with its own GNU General Public License. For more information: https://en.wikipedia.org/wiki/Free_Software_Foundation. |
 | `_wk-gawk` | GNU version of awk, a versatile programming language for working on files. |
 | `_wk-Gawk` | GNU version of awk, a versatile programming language for working on files. Related to: awk. |
 | `_wk-GAWK` | GNU version of awk, a versatile programming language for working on files. Related to: awk.  More information: https://www.gnu.org/software/gawk/manual/gawk.html. |
@@ -227,6 +265,12 @@ This document lists all triggers and their corresponding expansions from the YAM
 | `_wk-rg` | ripgrep, a recursive line-oriented search tool. |
 | `_wk-Rg` | ripgrep, a recursive line-oriented search tool. Aims to be a faster alternative to grep. |
 | `_wk-RG` | ripgrep, a recursive line-oriented search tool. Aims to be a faster alternative to grep.  More information: https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md. |
+| `_wk-rnrb` | Round Robin is an algorithm employed by schedulers in computing. |
+| `_wk-Rnrb` | Round Robin is one of the algorithms employed by process and network schedulers in computing.  Source: https://en.wikipedia.org/wiki/Round-robin_scheduling |
+| `_wk-RNRB` | Round Robin is one of the algorithms employed by process and network schedulers in computing. Processes are assigned time slices in equal portions and circular order.  Source: https://en.wikipedia.org/wiki/Round-robin_scheduling |
+| `_wk-rr` | rr is a debugging tool. |
+| `_wk-Rr` | rr is a debugging tool designed to record and replay programme execution.  More information: https://en.wikipedia.org/wiki/Rr_(debugging) |
+| `_wk-RR` | rr is a debugging tool designed to record and replay programme execution. During the replay phase, rr supports reverse execution.  More information: https://en.wikipedia.org/wiki/Rr_(debugging) |
 | `_wk-ssh` | Secure Shell (SSH) |
 | `_wk-Ssh` | Secure Shell (SSH) is a protocol used to securely log onto remote systems. It can be used for logging or executing commands on a remote server.. |
 | `_wk-SSH` | Secure Shell is a protocol used to securely log onto remote systems. It can be used for logging or executing commands on a remote server.  More information: https://man.openbsd.org/ssh. |

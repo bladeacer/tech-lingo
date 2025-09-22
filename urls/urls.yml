@@ -20,6 +20,22 @@ matches:
   # ================================================================================ #
   
   # =============== #
+  # Debugging       #
+  # =============== #
+  - trigger: "_u-rr"
+    replace: "https://github.com/rr-debugger/rr"
+  - trigger: "_u-Rr"
+    replace: "https://github.com/rr-debugger/rr"
+  - trigger: "_u-RR"
+    replace: "https://github.com/rr-debugger/rr"
+  - trigger: "__rr"
+    replace: "rr"
+  - trigger: "__Rr"
+    replace: "rr (debugging tool)"
+  - trigger: "__RR"
+    replace: "rr (application execution debugging tool)"
+  
+  # =============== #
   # Version Control #
   # =============== #
 
@@ -35,6 +51,32 @@ matches:
     replace: "Git VCS"
   - trigger: "__GIT"
     replace: "Git (version control system)"
+
+  - trigger: "_u-gh"
+    replace: "https://github.com"
+  - trigger: "_u-Gh"
+    replace: "https://github.com"
+  - trigger: "_u-GH"
+    replace: "https://github.com"
+  - trigger: "__gh"
+    replace: "GitHub"
+  - trigger: "__Gh"
+    replace: "GitHub"
+  - trigger: "__GH"
+    replace: "GitHub (Git server)"
+
+  - trigger: "_u-glab"
+    replace: "https://gitlab.com"
+  - trigger: "_u-Glab"
+    replace: "https://gitlab.com"
+  - trigger: "_u-GLAB"
+    replace: "https://gitlab.com"
+  - trigger: "__glab"
+    replace: "GitLab"
+  - trigger: "__Glab"
+    replace: "GitLab"
+  - trigger: "__GLAB"
+    replace: "GitLab (Git server)"
 
   - trigger: "_u-ack"
     replace: "https://beyondgrep.com/"
@@ -61,6 +103,27 @@ matches:
     replace: "ag search"
   - trigger: "__AG"
     replace: "ag (Silver Searcher)"
+
+  # =========== #
+  # Terminology #
+  # =========== #
+  
+  - trigger: "_u-rnrb"
+    replace: "https://en.wikipedia.org/wiki/Round-robin_scheduling"
+  - trigger: "_u-Rnrb"
+    replace: "https://en.wikipedia.org/wiki/Round-robin_scheduling"
+  - trigger: "_u-RNRB"
+    replace: "https://en.wikipedia.org/wiki/Round-robin_scheduling"
+  - trigger: "__rnrb"
+    replace: "Round Robin"
+  - trigger: "__Rnrb"
+    replace: "Round Robin (scheduling)"
+  - trigger: "__RNRB"
+    replace: "Round Robin (scheduling algorithm)"
+    
+  # ================================================================================ #
+  # End of Terminology                                                               #
+  # ================================================================================ #
 
 # ================================================================================ #
 # --- End of CC BY-SA 4.0 Licensed Code derived from tldr-pages or Wikipedia ---   #
