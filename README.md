@@ -2,6 +2,13 @@
 
 An Espanso package with terms commonly used in the tech sector. WIP.
 
+## Project Status
+
+As I no longer use Espanso, I will no longer be working on this repository. It has been archived as of 6 January 2026.
+
+If you would like ownership transfer to further develop or maintain this project, feel free to reach out to me.
+
+
 ## Installation
 
 Installation as an external package.
